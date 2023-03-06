@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s ease;
+}
+
+div#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Merriweather", serif;
+  font-size: 100%;
+  overflow-y: overlay;
+}
+
+::selection {
+  background-color: #414141;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6f3d2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #582e21;
+}
+
+/* @media screen and (max-width: 1280px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 70%;
+  }
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.tag {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* @media screen and (max-width: 768px) {
+  .tag {
+    font-size: 1.2rem;
+  }
+
+  a {
+    font-size: 1.55rem;
+  }
+} */
+
+.btn {
+  border-radius: 12px;
+  padding: 1rem 1.8rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

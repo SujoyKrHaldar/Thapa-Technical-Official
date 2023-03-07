@@ -50,7 +50,7 @@ body {
   background: #582e21;
 }
 
-/* @media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   html {
     font-size: 90%;
   }
@@ -66,7 +66,7 @@ body {
   html {
     font-size: 70%;
   }
-} */
+}
 
 a {
   color: inherit;
@@ -89,22 +89,6 @@ p {
   line-height: 2rem;
 }
 
-.tag {
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-
-/* @media screen and (max-width: 768px) {
-  .tag {
-    font-size: 1.2rem;
-  }
-
-  a {
-    font-size: 1.55rem;
-  }
-} */
-
 .btn {
   border-radius: 12px;
   padding: 1rem 1.8rem;
@@ -116,4 +100,109 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/******************************* Blog landing **************************/
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background: #232323;
+  color: white;
+  padding: 5rem 0 4rem;
+}
+
+.hero-background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2b2b2b;
+}
+
+.hero-background-image img {
+  opacity: 0.3;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content p {
+  color: #d9d9d9;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.5s ease-in;
+}
+
+.back-btn:hover {
+  opacity: 1;
+}
+
+.tag {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.hero-content-main {
+  max-width: 768px;
+}
+
+.hero-content-main .hero-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d69667;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content .hero-breadcrumb p {
+  color: #d69667;
+}
+
+.hero-content-main h1 {
+  margin-bottom: 0.5rem;
+}
+
+.hero-content-main p {
+  max-width: 576px;
+}
+
+.hero-content-main p:last-child {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .hero-content-main p:last-child {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .hero-background-image img {
+    opacity: 0.2;
+  }
+
+  .date-of-post {
+    display: none;
+  }
+
+  .tag,
+  p {
+    font-size: 1.2rem;
+  }
+
+  p {
+    line-height: 2.3rem;
+  }
 }

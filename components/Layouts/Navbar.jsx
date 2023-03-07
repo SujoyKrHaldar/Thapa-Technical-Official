@@ -60,7 +60,7 @@ function Navbar() {
           </p>
         </Link>
 
-        <nav className="flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {pages.map((link, id) => (
             <Link key={id} className="hover:text-yellow-chrome" href={link.url}>
               {link.name}

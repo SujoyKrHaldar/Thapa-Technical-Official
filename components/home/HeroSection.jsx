@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function HeroSection() {
   return (
-    <section className="w-full h-screen bg-black text-white py-16">
+    <section className="w-full h-screen bg-black text-white pt-24 pb-16">
       <div className="absolute w-full max-w-[550px] h-[500px] inset-0">
         <img src="/assets/hero-pattern.png" />
         <div
